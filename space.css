@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css');
+
+
+.local-section {
+
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    width: 100%;
+   background-color: rgb(0, 0, 0, 0.4);
+}
+
+.container-local {
+    background-image: linear-gradient(to bottom, rgb(44, 238, 255, 0.5), rgb(0, 198, 255, 0.5), rgb(0, 154, 255, 0.5), rgb(0, 106, 242, 0.5), rgb(17, 42, 199, 0.5));
+    color: white;
+    justify-content: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 400px;
+    height: 330px;
+    box-shadow: 0 0 10px;
+
+}
+
+
+.info1 {
+
+    width: 90%;
+
+}
+
+
+
+.info2 {
+
+    width: 90%;
+}
+
+.info2 #saturday{
+    margin-top: 10px;
+}

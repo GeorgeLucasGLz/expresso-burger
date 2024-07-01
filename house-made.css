@@ -1,0 +1,280 @@
+.house-made-section {
+
+    background-image: url(./img/house-made.jpg);
+    background-size: 200px;
+}
+
+.title-house-made {
+
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+#title-house-made {
+
+    background-image: linear-gradient(to bottom, rgb(44, 238, 255, 0.3), rgb(0, 198, 255, 0.3), rgb(0, 154, 255, 0.3), rgb(0, 106, 242, 0.3), rgb(17, 42, 199, 0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 7px black;
+    border: 2px solid rgb(0, 174, 255);
+    box-shadow: 0 0 10px rgb(0, 195, 255);
+    width: 100%;
+    font-size: 30px;
+    position: relative;
+    top: 140px;
+
+}
+
+/* .title-house-made h1 {
+    position: relative;
+    top: 80px;
+    color: white;
+    text-shadow: 0 0 10px;
+} */
+
+
+
+
+
+.list-house-made {
+    z-index: 0;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+    margin-top: 130px;
+
+
+}
+
+.img-list {
+    z-index: 1;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.list-house-made .card-list {
+    z-index: 1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 10px white;
+    background-image: radial-gradient(circle, rgb(177, 117, 28, 0.5), rgb(213, 101, 59, 0.5), rgb(237, 84, 103, 0.5), rgb(241, 82, 158, 0.5), rgb(215, 102, 216, 0.5));
+    border: 2px solid rgb(245, 111, 250);
+    box-shadow: 0 0 10px rgb(245, 111, 250);
+}
+
+.image-side {
+    text-shadow: 2px 2px 7px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card {
+
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 2px 3px black;
+    line-height: 125%;
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
+    margin-bottom: 0;
+    flex-direction: column;
+
+}
+
+.info-card p {
+
+    text-shadow: 0 0 3px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+
+.btn-card {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 7px whitesmoke;
+    border: 3px solid white;
+
+}
+
+.btn-card a {
+    color: black;
+    font-size: 20px;
+}
+
+.btn-card a:hover {
+    color: white;
+}
+
+.btn-card:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white !important;
+    text-shadow: 0 0 10px white;
+    transition: 0.4s ease-in-out;
+
+
+}
+
+
+.card-logo {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    top: 50px;
+    right: 5px;
+}
+
+.card-logo img {
+    width: 100px;
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+
+    .cuts-section {
+
+        background-size: 35%;
+
+    }
+
+    #logo-header {
+        display: none;
+    }
+
+    .list-house-made {
+        width: 450px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-logo img {
+
+        width: 120px;
+    }
+
+
+}
+
+@media screen and (min-width: 0px) and (max-width : 900px) {
+    .img-list {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .list-house-made {
+        width: 450px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .info-card {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+    #fale-conosco {
+        top: 10%;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width : 780px) {
+
+    .house-made-section {
+
+
+        background-size: 300px;
+    }
+
+    .card-logo {
+
+        right: 0;
+    }
+
+    .list-house-made {
+        width: 400px;
+    }
+
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-list h1 {
+        text-align: center;
+    }
+
+    .img-list {
+        width: 330px;
+        height: 330px;
+        border-radius: 10px;
+    }
+
+    .info-card {
+
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width : 470px) {
+    .img-list {
+        width: 280px;
+        height: 280px;
+        border-radius: 10px;
+    }
+
+    .list-house-made {
+
+        width: 300px;
+
+    }
+
+
+    .info-card {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+}

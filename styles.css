@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+header {
+
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+
+
+}
+
+body {
+    background-image: url(./img/bg.webp);
+    background-size: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+
+}
+
+
+
+header #links {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    position: static;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    text-shadow: 2px 2px 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+header a {
+
+    z-index: 1000;
+    color: white !important;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+header a:hover {
+
+    color: rgb(245, 220, 0) !important;
+    font-size: 18px;
+
+}
+
+.mascara {
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+
+}
+
+.mascara2 {
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.9;
+
+
+}
+
+
+
+.bg-start {
+    z-index: 0;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+
+#first-section {
+
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#logo-side {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#descricao {
+    align-items: center;
+
+}
+
+p {
+
+    max-width: 500px;
+    text-shadow: 3px 2px 2px black;
+    font-size: 15px;
+
+}
+
+#p2 {
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    font-size: 15px;
+}
+
+#logo-img {
+
+    margin-bottom: 30px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+
+
+
+}
+
+#p1 {
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    width: 100vw;
+
+}
+
+#p1 span {
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    font-weight: bold;
+}
+
+
+
+
+#cakeBanner-img {
+
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+}
+
+.info-section {
+    background-image: url(./img/infoBG.webp);
+    background-size: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.info-images {
+    z-index: 1;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.info-images img {
+    border: 3px solid rgb(255, 0, 157);
+    box-shadow: 0 0 7px pink;
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    z-index: 1;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: white;
+}
+
+.btnStart1 {
+
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, #000000, #0e0e0e, #171717, #1f1f1f, #272727);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(0, 0, 0);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+.btnStart1:hover {
+
+    text-shadow: 0px 0px 10px white;
+    box-shadow: 0 0 5px;
+    transition: 0.4s ease-in-out;
+    width: 205px;
+    height: 55px;
+}
+
+
+
+.btnStart2 {
+
+    margin-top: 20px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+
+#btnOrder {
+
+    margin-top: 5px;
+    background-image: linear-gradient(to bottom, #000000, #0e0e0e, #171717, #1f1f1f, #272727);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+#btnBack {
+
+    margin-top: 15px;
+    background-image: linear-gradient(to top, #d00000, #d90221, #e01138, #e4224e, #e73162);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(10, 10, 10);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+#btn:hover {
+    background-color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 10px white;
+    box-shadow: 0 0 5px;
+    transition: 0.4s ease-in-out;
+    width: 205px;
+    height: 55px;
+}
+
+
+.link-insta {
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.link-insta #insta-img {
+    z-index: 1000;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.link-insta #insta-img:hover {
+    transition: 0.4s ease-in-out;
+    width: 45px;
+
+}
+
+#formBasic {
+
+    z-index: 1000;
+    left: -500px;
+    background-color: rgb(53, 50, 52);
+    border: 3px solid #ffffff;
+    position: fixed;
+    gap: 3px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: start;
+    width: 350px;
+    max-height: 100%;
+    overflow-y: scroll;
+
+}
+
+
+#formBasic::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#fale-conosco {
+
+    z-index: 1000;
+    left: -340px;
+    background-color: rgb(53, 50, 52);
+    border: 3px solid #d000a5;
+    position: fixed;
+    gap: 3px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: start;
+    width: 350px;
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+#fale-conosco::-webkit-scrollbar {
+    display: none;
+}
+
+#form-caseiro {
+
+    z-index: 1000;
+    left: -500px;
+    background-color: rgb(53, 50, 52);
+    border: 3px solid #d000a5;
+    position: fixed;
+    gap: 3px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: start;
+    width: 350px;
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+#boloCaseiroEscolhido {
+    font-weight: bold;
+    color: rgb(252, 172, 0);
+    text-transform: uppercase;
+    text-shadow: 0 0 7px;
+}
+
+#form-caseiro::-webkit-scrollbar {
+    display: none;
+}
+
+
+#mascara-formulario {
+    visibility: hidden;
+    z-index: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+
+
+}
+
+#mascara-formCaseiro {
+    visibility: hidden;
+    z-index: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+
+
+}
+
+
+
+label {
+    color: white;
+
+
+}
+
+label span {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 7px rgb(0, 0, 0)
+}
+
+select {
+    color: white;
+    background-color: rgb(53, 50, 52);
+    border-radius: 5px;
+    border: 2px solid #fa01c8;
+}
+
+input {
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 7px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #fa01c8;
+    outline-color: rgb(233, 0, 155);
+    background-color: rgb(53, 53, 53);
+}
+
+#boloEscolhido {
+    font-weight: bold;
+    color: rgb(0, 160, 252);
+    text-transform: uppercase;
+    text-shadow: 0 0 7px;
+}
+
+#valorCaseiro {
+    font-weight: bold;
+    color: rgb(252, 0, 231);
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width : 1150px) {
+
+    .info-images {
+
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width : 1000px) {
+
+    #links a {
+
+        font-size: 15px;
+        margin-right: 25px;
+
+    }
+
+    #first-section {
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #logo-side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo-side #logo-img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    #p1 {
+        display: flex;
+        justify-content: center;
+        max-width: 450px;
+        text-align: center;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    #p2 {
+        font-size: 13px;
+    }
+
+    #descricao {
+
+        max-width: 450;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    #btn {
+
+        margin-bottom: 30px;
+    }
+
+
+    #cakeBanner-img {
+        margin-top: 50px;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px white;
+    }
+
+
+    #logo-header {
+        display: none;
+    }
+
+    #logo-img {
+        border-radius: 20%;
+        width: 350px;
+        height: 350px;
+    }
+
+    body {
+
+        background-size: 100%;
+
+
+    }
+
+    header {
+        visibility: hidden;
+    }
+
+    header #links {
+        visibility: hidden;
+    }
+
+    #fale-conosco {
+        max-height: 80%;
+    }
+
+    #form-caseiro {
+        max-height: 80%;
+    }
+
+    #formBasic {
+
+        max-height: 80%;
+        margin-top: 20%;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width : 650px) {
+
+    body {
+
+        background-size: 150%;
+
+
+    }
+
+    .info-images img {
+
+        width: 300px;
+
+    }
+
+
+
+    #cakeBanner-img {
+
+        width: 450px;
+
+    }
+
+    #links a {
+        font-size: 20px;
+    }
+
+    #p1 {
+
+        max-width: 250px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width : 520px) {
+    #cakeBanner-img {
+
+        width: 350px;
+
+    }
+
+    #links a {
+        font-size: 16px;
+    }
+
+    #logo-img {
+
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width : 405px) {
+    #links a {
+        font-size: 13px;
+    }
+
+    #first-section {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width : 400px) {
+    #cakeBanner-img {
+
+        width: 300px;
+
+
+    }
+
+    #logo-img {
+
+        width: 200px;
+        height: 200px;
+    }
+
+    #fale-conosco {
+        margin-top: 0;
+        width: 300px;
+    }
+
+    #form-caseiro {
+        margin-top: 40px;
+        width: 300px;
+    }
+
+    #formBasic {
+
+        width: 300px;
+    }
+
+
+
+    input {
+        padding: 7px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid #d000a5;
+        outline-color: white;
+        background-color: rgb(53, 53, 53);
+    }
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width : 350px) {
+    #first-section {
+        margin-top: 150px;
+    }
+
+}
